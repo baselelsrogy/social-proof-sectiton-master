@@ -1,0 +1,179 @@
+:root {
+    --very-dark-magenta: hsl(300, 43%, 22%);
+    --soft-pink: hsl(333, 80%, 67%);
+    --dark-grayish-magenta: hsl(303, 10%, 53%);
+    --light-grayish-magenta: hsl(300, 24%, 96%);
+    --White-color: hsl(0, 0%, 100%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font: inherit;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+ul {
+    list-style: none;
+}
+
+html {
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+
+body {
+    position: relative;
+    font-size: 1.6rem;
+    font-family: 'League Spartan', sans-serif;
+    max-height: 100vh;
+    background-color: var(--White-color);
+}
+
+.bg-top {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -3;
+}
+
+.bg-bottom {
+    position: absolute;
+    bottom: -2rem;
+    right: 0;
+    height: 85vh;
+    z-index: -2;
+}
+
+.container {
+    width: 125rem;
+    margin: 0 auto;
+    padding: 8rem 0;
+    background-color: transparent;
+    display: flex;
+    flex-direction: column;
+    gap: 5.4rem;
+}
+
+.content {
+    display: flex;
+    gap: 20rem;
+}
+
+.details {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.title {
+    font-size: 6rem;
+    font-weight: 700;
+    color: var(--very-dark-magenta);
+}
+
+.description {
+    color: var(--dark-grayish-magenta);
+    font-weight: 500;
+    font-size: 2rem;
+    line-height: 2.7rem;
+}
+
+.ratings {
+    padding: 2rem;
+    /* margin-left: auto; */
+}
+
+.ratings-list {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.rating {
+    background-color: var(--light-grayish-magenta);
+    padding: 2rem 3rem;
+    border-radius: 1rem;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 3rem;
+    font-weight: 700;
+}
+
+.two {
+    position: relative;
+    left: 5rem;
+}
+.three {
+    position: relative;
+    left: 10rem;
+}
+
+.stars {
+    display: flex;
+    gap: 0.5rem;
+}
+
+.card-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2.3rem;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    gap: 2.8rem;
+    background-color: var(--very-dark-magenta);
+    color: var(--White-color);
+    padding: 3.5rem 2rem;
+    border-radius: 1rem;
+}
+
+.person-detail {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+.person-detail > img {
+    width: 5.5rem;
+    border-radius: 50%;
+}
+
+.name-position {
+    display: flex;
+    flex-direction: column;
+    gap: 0.7rem;
+}
+
+.name {
+    color: var(--White-color);
+    font-weight: 700;
+}
+
+.position {
+    color: var(--soft-pink);
+}
+
+.comment {
+    font-weight: 400;
+    font-size: 2rem;
+    line-height: 1.5;
+}
+
+.card-two {
+    position: relative;
+    top: 2rem;
+}
+
+.card-three {
+    position: relative;
+    top: 4rem;
+}
